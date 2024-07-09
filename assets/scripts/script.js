@@ -1,36 +1,36 @@
-'use strict';
+// 'use strict';
 
-document.querySelectorAll('a[data-target]').forEach((anchor) => {
-  anchor.addEventListener('click', function (e) {
+document.querySelectorAll("a[data-target]").forEach((anchor) => {
+  anchor.addEventListener("click", function (e) {
     e.preventDefault();
 
-    const targetId = this.getAttribute('data-target');
+    const targetId = this.getAttribute("data-target");
     const target = document.getElementById(targetId);
-    const hamburgerMenu = document.querySelector('.hamburger-menu');
-    const hamburgerIcon = document.querySelector('.hamburger-icon');
+    const hamburgerMenu = document.querySelector(".hamburger-menu");
+    const hamburgerIcon = document.querySelector(".hamburger-icon");
 
     if (target) {
       window.scrollTo({
         top: target.offsetTop,
-        behavior: 'smooth',
+        behavior: "smooth",
       });
 
-      hamburgerMenu.classList.remove('active');
-      hamburgerIcon.classList.remove('active');
+      hamburgerMenu.classList.remove("active");
+      hamburgerIcon.classList.remove("active");
     }
   });
 });
 
 function scrollToSection3() {
-  const section3 = document.querySelector('.section-3');
+  const section3 = document.querySelector(".section-3");
 
   if (section3) {
-    section3.scrollIntoView({ behavior: 'smooth' });
+    section3.scrollIntoView({ behavior: "smooth" });
   }
 }
 
 function scrollToContactForm() {
-  const contactFormSection = document.getElementById('contact');
+  const contactFormSection = document.getElementById("contact");
 
   if (contactFormSection && isMobileDevice()) {
     const offsetFromBottom = 733;
@@ -40,7 +40,7 @@ function scrollToContactForm() {
 
     window.scrollTo({
       top: contactFormPosition - windowHeight + offsetFromBottom,
-      behavior: 'smooth',
+      behavior: "smooth",
     });
   }
 }
@@ -53,27 +53,27 @@ function isMobileDevice() {
 
 document
   .querySelector('.hamburger-menu a[data-target="home"]')
-  .addEventListener('click', function () {
+  .addEventListener("click", function () {
     window.scrollTo({
       top: 0,
-      behavior: 'smooth',
+      behavior: "smooth",
     });
 
-    const hamburgerMenu = document.querySelector('.hamburger-menu');
-    const hamburgerIcon = document.querySelector('.hamburger-icon');
-    hamburgerMenu.classList.remove('active');
-    hamburgerIcon.classList.remove('active');
+    const hamburgerMenu = document.querySelector(".hamburger-menu");
+    const hamburgerIcon = document.querySelector(".hamburger-icon");
+    hamburgerMenu.classList.remove("active");
+    hamburgerIcon.classList.remove("active");
   });
 
-const hamburgerIcon = document.querySelector('.hamburger-icon');
-const hamburgerMenu = document.querySelector('.hamburger-menu');
+const hamburgerIcon = document.querySelector(".hamburger-icon");
+const hamburgerMenu = document.querySelector(".hamburger-menu");
 
-hamburgerIcon.addEventListener('click', function () {
-  if (hamburgerMenu.classList.contains('active')) {
-    hamburgerMenu.classList.remove('active');
-    hamburgerIcon.classList.remove('active');
+hamburgerIcon.addEventListener("click", function () {
+  if (hamburgerMenu.classList.contains("active")) {
+    hamburgerMenu.classList.remove("active");
+    hamburgerIcon.classList.remove("active");
   } else {
-    hamburgerMenu.classList.add('active');
-    hamburgerIcon.classList.add('active');
+    hamburgerMenu.classList.add("active");
+    hamburgerIcon.classList.add("active");
   }
 });
