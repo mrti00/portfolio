@@ -18,7 +18,9 @@ function Portfolio() {
           />
           <a
             className="text-xl font-semibold text-blue-800 hover:text-blue-600"
-            href="https://tpmajamicic.com"
+            href="https://tpmajamicic.com "
+            target="_blank"
+            rel="noopener noreferrer"
           >
             https://tpmajamicic.com
           </a>
