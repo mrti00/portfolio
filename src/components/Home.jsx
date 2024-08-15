@@ -25,21 +25,25 @@ function Home() {
         />
 
         <div className="flex flex-col items-center gap-4">
-          <h3 className="text-xl font-bold text-gray-600">Hello, I&apos;m</h3>
-          <h1 className="text-4xl font-black text-gray-800">Marko Micic</h1>
-          <h2 className="text-2xl font-extrabold text-gray-600">
+          <h3 className="text-l font-bold text-gray-600 md:text-xl">
+            Hello, I&apos;m
+          </h3>
+          <h1 className="text-3xl font-black text-gray-800 md:text-4xl">
+            Marko Micic
+          </h1>
+          <h2 className="text-xl font-extrabold text-gray-600 md:text-2xl">
             Frontend Developer
           </h2>
           <div className="flex gap-2 md:gap-5">
             <button
               onClick={viewCV}
-              className="rounded-full border-2 px-6 py-5 duration-500 hover:bg-gray-600 hover:text-white"
+              className="rounded-full border-2 p-3 duration-500 hover:bg-gray-600 hover:text-white md:px-6 md:py-5"
             >
               <span className="font-semibold">View my CV</span>
             </button>
             <button
               onClick={() => scrollToSection("#contact")}
-              className="rounded-full border-2 bg-gray-600 px-6 py-5 text-white duration-500 hover:bg-gray-800"
+              className="rounded-full border-2 bg-gray-600 p-3 text-white duration-500 hover:bg-gray-800 md:px-6 md:py-5"
             >
               <span className="font-semibold">Contact Info</span>
             </button>
