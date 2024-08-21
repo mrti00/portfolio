@@ -16,8 +16,8 @@ function Home() {
   };
 
   return (
-    <section id="home" className="p-24 md:p-24">
-      <div className="md:mt-42 mt-36 flex flex-col items-center gap-8 md:flex-row md:justify-center md:gap-24">
+    <section id="home" className="pb-24 md:pb-24">
+      <div className="mt-36 flex flex-col items-center gap-8 md:mt-64 md:flex-row md:justify-center md:gap-24">
         <img
           src={profilepic}
           alt="Profile picture"
