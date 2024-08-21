@@ -3,7 +3,7 @@ import { FaUniversity, FaTools } from "react-icons/fa";
 
 function AboutMe() {
   return (
-    <section className="bg-gray-100 p-5" id="aboutme">
+    <section className="mt-20 bg-gray-100 p-5 md:mt-52" id="aboutme">
       <div className="text-center">
         <h3 className="text-xl text-gray-600">Get to know more</h3>
         <h2 className="mt-2 text-2xl font-semibold"> About me</h2>
