@@ -59,8 +59,11 @@ function AboutMe() {
           <p className="leading-relaxed">
             Looking ahead, I&apos;m eager to transition into a full-stack
             developer role, leveraging my frontend expertise while expanding my
-            backend capabilities. Currently, I&apos;m on the lookout for junior
-            positions or internship opportunities in the frontend realm.
+            backend capabilities.{" "}
+            <span className="font-medium">
+              Currently, I&apos;m on the lookout for junior positions or
+              internship opportunities in the frontend realm.
+            </span>
           </p>
           <br />
           <p>
