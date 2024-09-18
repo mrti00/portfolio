@@ -2,12 +2,10 @@ import profilepic from "../assets/images/profile-pic.png";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
 
 function Home() {
-  // Function to handle CV download or view
   const viewCV = () => {
-    window.open("../files/Marko_Micic_CV.png", "_blank");
+    window.open("/files/Marko_Micic_CV.png", "_blank");
   };
 
-  // Function to scroll to the specified section
   const scrollToSection = (selector) => {
     const element = document.querySelector(selector);
     if (element) {
