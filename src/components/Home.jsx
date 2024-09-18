@@ -3,7 +3,7 @@ import { FaLinkedin, FaGithub } from "react-icons/fa";
 
 function Home() {
   const viewCV = () => {
-    window.open("/files/Marko_Micic_CV.png", "_blank");
+    window.open("/files/Marko_Micic_CV.pdf", "_blank");
   };
 
   const scrollToSection = (selector) => {
