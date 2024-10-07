@@ -1,7 +1,17 @@
 import profilepic from "../assets/images/profile-pic.png";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 function Home() {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      once: true,
+    });
+  }, []);
+
   const viewCV = () => {
     window.open("/files/Marko_Micic_CV.pdf", "_blank");
   };
@@ -14,12 +24,18 @@ function Home() {
   };
 
   return (
-    <section id="home" className="pb-24 md:pb-24">
-      <div className="mt-36 flex flex-col items-center gap-8 md:mt-64 md:flex-row md:justify-center md:gap-24">
+    <section
+      id="home"
+      className="flex min-h-screen items-center justify-center pt-10 md:pt-0"
+    >
+      <div
+        className="flex flex-col items-center gap-14 md:flex-row"
+        data-aos="fade-up"
+      >
         <img
           src={profilepic}
           alt="Profile picture"
-          className="h-auto w-60 justify-center md:w-96"
+          className="h-auto w-60 md:w-96"
         />
 
         <div className="flex flex-col items-center gap-4">

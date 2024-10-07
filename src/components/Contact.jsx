@@ -1,6 +1,16 @@
 import { useState } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 const Kontakt = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      once: true,
+    });
+  }, []);
+
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -37,12 +47,13 @@ const Kontakt = () => {
 
   return (
     <section id="contact" className="bg-gray-100 p-5 pb-16">
-      <div className="mb-12 text-center">
+      <div className="mb-12 text-center" data-aos="fade-up">
         <h3 className="text-xl text-gray-600">Get in touch</h3>
         <h2 className="mt-2 text-2xl font-semibold">Contact me</h2>
       </div>
       <div className="flex justify-center">
         <form
+          data-aos="fade-up"
           onSubmit={handleSubmit}
           className="flex w-full flex-col rounded-lg border bg-white p-6 shadow-lg md:w-3/4 lg:w-2/3 xl:w-1/2"
         >
