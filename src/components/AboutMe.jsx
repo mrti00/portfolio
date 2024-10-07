@@ -79,23 +79,25 @@ function AboutMe() {
             Looking ahead, I&apos;m eager to transition into a full-stack
             developer role, leveraging my frontend expertise while expanding my
             backend capabilities.{" "}
-            <span className="font-medium" data-aos="fade-up">
+            <span className="font-medium">
               Currently, I&apos;m on the lookout for junior positions or
               internship opportunities in the frontend realm.
             </span>
           </p>
           <br />
-          <p data-aos="fade-up">
-            Let&apos;s connect and collaborate to build exciting digital
-            experiences!
-          </p>
-          <br />
-          <p data-aos="fade-up">
-            Feel free to reach out to me via email at:&nbsp;
-            <a className="underline" href="mailto:micicmaarko@gmail.com">
-              micicmaarko@gmail.com
-            </a>
-          </p>
+          <div data-aos="fade-up">
+            <p>
+              Let&apos;s connect and collaborate to build exciting digital
+              experiences!
+            </p>
+            <br />
+            <p>
+              Feel free to reach out to me via email at:&nbsp;
+              <a className="underline" href="mailto:micicmaarko@gmail.com">
+                micicmaarko@gmail.com
+              </a>
+            </p>
+          </div>
         </div>
       </div>
     </section>

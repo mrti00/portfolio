@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import AboutMe from "./components/AboutMe";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
@@ -6,6 +7,10 @@ import Home from "./components/Home";
 import Portfolio from "./components/Portfolio";
 
 function App() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <>
       <Header />
