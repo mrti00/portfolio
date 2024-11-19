@@ -49,7 +49,7 @@ function AboutMe() {
             <p className="font-bold">Skills</p>
             <p>HTML5</p>
             <p>CSS3 (SASS, Tailwind)</p>
-            <p>Javascript, Typescript</p>
+            <p>JavaScript, TypeScript</p>
             <p> React</p>
             <p>Git</p>
           </div>
@@ -64,7 +64,7 @@ function AboutMe() {
           <p className="leading-relaxed" data-aos="fade-up">
             Throughout my studies, I immersed myself in various projects, honing
             my skills in HTML, CSS (including SCSS/SASS, Tailwind, and
-            Bootstrap), and JavaScript, Typescript (with experience in React,
+            Bootstrap), and JavaScript, TypeScript (with experience in React,
             Angular, Node.js, and Express.js). Additionally, I&apos;ve dabbled
             in other languages and technologies like PHP, Python, and Java.
           </p>
